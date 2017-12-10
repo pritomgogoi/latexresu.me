@@ -9,6 +9,4 @@ const colors = {
   accent: '#34305a'
 }
 
-export {
-  colors
-}
+export { colors }

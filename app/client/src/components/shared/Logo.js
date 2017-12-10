@@ -7,8 +7,10 @@ import styled from 'styled-components'
 import { colors } from '../../theme'
 
 const H1 = styled.h1`
+  font-size: 3em;
   font-family: 'NexaBold';
   color: ${colors.accent};
+  margin: 0;
 `
 
 const Em = styled.em`
