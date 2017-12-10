@@ -1,4 +1,3 @@
 {
-  "presets": ["stage-0", "env", "react", "flow"],
-  "plugins": ["styled-components"]
+  "presets": ["stage-0", "env", "react", "flow"]
 }

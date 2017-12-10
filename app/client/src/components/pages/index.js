@@ -2,10 +2,8 @@
  * @flow
  */
 
-import Home from './Home'
-import ErrorBoundary from './ErrorBoundary'
+import Home from './home'
 
 export {
-  Home,
-  ErrorBoundary
+  Home
 }

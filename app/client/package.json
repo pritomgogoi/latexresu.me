@@ -5,9 +5,12 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development parcel src/index.html -p 3000",
     "build": "cross-env NODE_ENV=production parcel build src/index.html --no-minify --public-url /",
+    "lint": "blyss | snazzy",
+    "fix": "blyss --fix",
+    "format": "prettier --write \"src/**/*.js\"",
     "flow": "flow",
     "flow-typed": "flow-typed",
-    "test": "blyss | snazzy && flow status"
+    "test": "npm run lint && flow status"
   },
   "dependencies": {
     "react": "^16.2.0",
@@ -20,12 +23,14 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-react-app": "^3.1.0",
     "babel-preset-stage-0": "^6.24.1",
     "blyss": "^8.1.0",
     "cross-env": "^5.1.1",
     "flow-bin": "^0.61.0",
     "flow-typed": "^2.2.3",
     "parcel-bundler": "^1.1.0",
+    "prettier": "^1.9.1",
     "snazzy": "^7.0.0"
   }
 }
