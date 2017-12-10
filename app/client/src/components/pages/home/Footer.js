@@ -55,7 +55,7 @@ function Footer() {
         <Item>Source</Item>
         <Item>Issues</Item>
         <Item>Contact</Item>
-        <Item>Footer</Item>
+        <Item>Donate</Item>
       </List>
       <Copyright>© 2017 Saad Quadri</Copyright>
     </StyledFooter>

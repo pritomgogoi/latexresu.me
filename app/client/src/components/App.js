@@ -16,6 +16,8 @@ injectGlobal`
     background: ${colors.background};
     color: ${colors.accent};
     font-family: 'Lato', 'Open Sans', sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
   }
 `
 
