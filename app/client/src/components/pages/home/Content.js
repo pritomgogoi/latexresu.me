@@ -32,13 +32,16 @@ const ResumeContainer = styled.div`
   position: relative;
 `
 
-const Resume = styled.div`
+const Resume = styled.img`
+  background: white;
   width: 400px;
   height: 500px;
   position: absolute;
+  top: 0;
   bottom: 0;
-  left: 0;
-  background: white;
+  left:0;
+  right:0;
+  margin: auto;
   box-shadow: 0 2px 25px 2px rgba(0, 0, 0, 0.07);
   border-radius: 8px;
   z-index: 3;
@@ -67,9 +70,9 @@ function Content() {
       </Left>
       <Right>
         <ResumeContainer>
-          <Resume />
-          <Resume />
-          <Resume />
+          <Resume src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA" alt="Resume Preview" />
+          <Resume src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA" alt="Resume Preview" />
+          <Resume src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA" alt="Resume Preview" />
         </ResumeContainer>
       </Right>
     </Main>

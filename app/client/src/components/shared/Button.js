@@ -13,8 +13,8 @@ type Props = {
 }
 
 const StyledButton = styled.button`
-  width: 185px;
-  height: 45px;
+  min-width: 200px;
+  min-height: 45px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 100px;
   border: none;
