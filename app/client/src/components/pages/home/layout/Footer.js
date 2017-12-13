@@ -4,7 +4,7 @@
 
 import React from 'react'
 import styled from 'styled-components'
-import { colors } from '../../../theme'
+import { colors } from '../../../../theme'
 
 const StyledFooter = styled.footer`
   position: relative;

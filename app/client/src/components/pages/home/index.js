@@ -3,7 +3,7 @@
  */
 
 import Home from './Home'
-import Footer from './Footer'
+import { Content, Footer } from './layout'
 
-export { Footer }
+export { Content, Footer }
 export default Home

@@ -9,4 +9,16 @@ const colors = {
   accent: '#34305a'
 }
 
-export { colors }
+const sizes = {
+  form: {
+    headerHeight: '75px'
+  }
+}
+
+const spacing = {
+  form: {
+    headerPadding: '15px'
+  }
+}
+
+export { colors, sizes, spacing }

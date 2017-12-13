@@ -30,12 +30,12 @@ const StyledButton = styled.button`
     props.primary ? colors.primary : colors.accent};
 
   &:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     background: ${(props: Props) =>
       props.primary
         ? darken(0.1, colors.primary)
         : lighten(0.1, colors.accent)};
-    cursor: pointer;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   }
 `
 

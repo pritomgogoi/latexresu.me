@@ -3,5 +3,6 @@
  */
 
 import Home from './home'
+import Form from './form'
 
-export { Home }
+export { Home, Form }

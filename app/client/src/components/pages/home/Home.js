@@ -4,8 +4,7 @@
 
 import React from 'react'
 import styled from 'styled-components'
-import Content from './Content'
-import Footer from './Footer'
+import { Content, Footer } from './layout'
 
 const Wrapper = styled.div`
   display: flex;
