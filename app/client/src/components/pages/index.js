@@ -3,6 +3,6 @@
  */
 
 import Home from './home'
-import Form from './form'
+import Generator from './generator'
 
-export { Home, Form }
+export { Home, Generator }

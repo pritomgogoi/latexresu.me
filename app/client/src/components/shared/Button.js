@@ -2,17 +2,11 @@
  * @flow
  */
 
-import React, { type Node } from 'react'
 import styled from 'styled-components'
 import { lighten, darken } from 'polished'
 import { colors } from '../../theme'
 
-type Props = {
-  children: Node,
-  primary?: boolean
-}
-
-const StyledButton = styled.button`
+const Button = styled.button`
   min-width: 200px;
   min-height: 45px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -26,25 +20,16 @@ const StyledButton = styled.button`
   font-family: 'Lato';
   transition: 0.3s ease all;
   outline: none;
-  background: ${(props: Props) =>
-    props.primary ? colors.primary : colors.accent};
+  background: ${props => (props.primary ? colors.primary : colors.accent)};
 
   &:hover {
     cursor: pointer;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    background: ${(props: Props) =>
+    background: ${props =>
       props.primary
         ? darken(0.1, colors.primary)
         : lighten(0.1, colors.accent)};
   }
 `
-
-function Button({ primary, children, ...props }: Props) {
-  return (
-    <StyledButton primary={primary} {...props}>
-      {children}
-    </StyledButton>
-  )
-}
 
 export default Button

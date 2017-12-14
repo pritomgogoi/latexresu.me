@@ -6,7 +6,7 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { injectGlobal } from 'styled-components'
 import ErrorBoundary from './ErrorBoundary'
-import { Home, Form } from './pages'
+import { Home, Generator } from './pages'
 import { colors } from '../theme'
 
 injectGlobal`
@@ -27,7 +27,8 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/generator" component={Form} />
+          <Route path="/generator" component={Generator} />
+          <Route path="*" render={() => <h1>404</h1>} />
         </Switch>
       </Router>
     </ErrorBoundary>
