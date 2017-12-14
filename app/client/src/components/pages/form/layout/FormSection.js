@@ -16,7 +16,7 @@ const Section = styled.fieldset`
 `
 
 function FormSection() {
-  return <Section>hi</Section>
+  return <Section />
 }
 
 export default FormSection

@@ -5,6 +5,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import FormSection from './FormSection'
+import Preview from '../preview'
 import { sizes, spacing } from '../../../../theme'
 
 const Wrapper = styled.div`
@@ -14,20 +15,11 @@ const Wrapper = styled.div`
   );
 `
 
-const Section = styled.div`
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`
-
-const Right = Section.extend``
-
 function Content() {
   return (
     <Wrapper>
       <FormSection />
-      <Right />
+      <Preview />
     </Wrapper>
   )
 }

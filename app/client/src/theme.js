@@ -11,13 +11,13 @@ const colors = {
 
 const sizes = {
   form: {
-    headerHeight: '75px'
+    headerHeight: '50px'
   }
 }
 
 const spacing = {
   form: {
-    headerPadding: '15px'
+    headerPadding: '10px'
   }
 }
 
