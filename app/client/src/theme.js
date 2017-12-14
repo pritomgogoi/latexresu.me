@@ -12,6 +12,9 @@ const colors = {
 const sizes = {
   form: {
     headerHeight: '50px'
+  },
+  footer: {
+    height: '100px'
   }
 }
 

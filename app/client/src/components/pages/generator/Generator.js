@@ -3,14 +3,22 @@
  */
 
 import React from 'react'
-import { Header, Content } from './layout'
+import styled from 'styled-components'
+import { Header, Content, Footer } from './layout'
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`
 
 function Generator() {
   return (
-    <div>
+    <Wrapper>
       <Header />
       <Content />
-    </div>
+      <Footer />
+    </Wrapper>
   )
 }
 

@@ -7,8 +7,8 @@ import { lighten, darken } from 'polished'
 import { colors } from '../../theme'
 
 const Button = styled.button`
-  min-width: 200px;
-  min-height: 45px;
+  width: 200px;
+  height: 45px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 100px;
   border: none;

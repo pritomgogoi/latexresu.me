@@ -60,11 +60,15 @@ const Resume = styled.img`
   }
 `
 
+const StyledLogo = styled(Logo)`
+  margin-bottom: 25px;
+`
+
 function Content() {
   return (
     <Main>
       <Left>
-        <Logo />
+        <StyledLogo width={200} />
         <Link to="/generator">
           <Button primary>Make New Resume</Button>
         </Link>

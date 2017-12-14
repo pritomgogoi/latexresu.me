@@ -3,27 +3,14 @@
  */
 
 import React from 'react'
-import styled from 'styled-components'
-import { colors } from '../../theme'
+import ResumakeLogo from '../../assets/logo.svg'
 
-const H1 = styled.h1`
-  font-size: 3em;
-  font-family: 'NexaBold';
-  color: ${colors.accent};
-  margin: 0;
-`
+type Props = {
+  width: number
+}
 
-const Em = styled.em`
-  font-style: normal;
-  color: ${colors.primary};
-`
-
-function Logo() {
-  return (
-    <H1>
-      resu<Em>make</Em>
-    </H1>
-  )
+function Logo({ width, ...props }: Props) {
+  return <img width={width} src={ResumakeLogo} {...props} />
 }
 
 export default Logo

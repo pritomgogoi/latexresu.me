@@ -9,7 +9,7 @@ import { colors } from '../../../../theme'
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 `
 
 const StyledInput = styled.input`
@@ -17,7 +17,7 @@ const StyledInput = styled.input`
   width: 65%;
   outline: none;
   border: 1px solid ${colors.foreground};
-  border-radius: 3px;
+  border-radius: 5px;
   padding: 5px 10px;
   &:focus {
     border: 1px solid ${colors.primary};
@@ -27,11 +27,9 @@ const StyledInput = styled.input`
 const Label = styled.label`
   width: 35%;
   color: ${colors.accent};
-  text-transform: uppercase;
   text-align: right;
   margin-right: 15px;
   font-size: 0.75em;
-  letter-spacing: 1px;
 `
 
 type Props = {

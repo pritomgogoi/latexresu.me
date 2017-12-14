@@ -6,11 +6,12 @@ import React, { Component } from 'react'
 import { Document, Page } from 'react-pdf/build/entry.webpack'
 import styled from 'styled-components'
 import { Button } from '../../../shared'
-import { colors } from '../../../../theme'
 import BlankPDF from '../../../../assets/resume.pdf'
 
 const Resume = styled.div`
+  position: fixed;
   width: 50%;
+  right: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,25 +20,23 @@ const Resume = styled.div`
   padding: 0;
 `
 
-const preview = Math.min(800, (document.body: any).clientWidth - 52)
-
 const ResumePage = styled(Page)`
-  height: 100% !important;
+  width: 100%;
+  height: 100%;
 
   canvas {
+    width: auto !important;
+    height: auto !important;
+    max-width: 55% !important;
     box-shadow: 0 2px 25px 2px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
     margin: 0 auto;
-    max-width: 60%;
-    width: ${preview}px !important;
-    height: auto !important;
   }
 `
 
 const MakeButton = Button.extend`
-  min-width: 25%;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  width: 150px;
+  padding: 0;
 `
 
 class Preview extends Component<*, *> {
