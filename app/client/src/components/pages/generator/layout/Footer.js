@@ -8,7 +8,7 @@ import Progress from '../progress'
 
 const StyledFooter = styled.footer`
   width: 100%;
-  height: 75px;
+  height: 8vh;
 `
 
 function Footer() {

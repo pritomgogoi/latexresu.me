@@ -10,7 +10,7 @@ import { colors } from '../../../../theme'
 const OuterBar = styled.div`
   border-radius: 100px;
   width: 35%;
-  height: 10px;
+  height: 6px;
   background: ${lighten(0.15, colors.accent)};
   margin: 0 15px;
 `
