@@ -3,7 +3,7 @@
  */
 
 import Generator from './Generator'
-import { Header, Content } from './layout'
+import { Header, Content, Footer } from './layout'
 
-export { Header, Content }
+export { Header, Content, Footer }
 export default Generator

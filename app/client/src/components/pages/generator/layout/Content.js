@@ -10,7 +10,7 @@ import Preview from '../preview'
 const Wrapper = styled.div`
   display: flex;
   flex: 1;
-  margin: 30px 0;
+  margin-top: calc(30px + 8vh);
 `
 
 function Content() {

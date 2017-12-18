@@ -17,7 +17,6 @@ const Button = styled.button`
   text-transform: uppercase;
   letter-spacing: 1.7px;
   font-size: 0.6em;
-  font-family: 'Lato';
   transition: 0.3s ease all;
   outline: none;
   background: ${props => (props.primary ? colors.primary : colors.accent)};

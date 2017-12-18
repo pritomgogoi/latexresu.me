@@ -4,18 +4,21 @@
 
 import React from 'react'
 import styled from 'styled-components'
-import Progress from '../progress'
+import { colors, sizes, spacing } from '../../../../theme'
 
 const StyledFooter = styled.footer`
   width: 100%;
-  height: 8vh;
+  height: ${sizes.form.headerHeight};
+  padding: ${spacing.form.headerPadding} 0;
+  background: ${colors.background};
+  box-shadow: 0 -4px 25px 2px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  bottom: 0;
 `
 
 function Footer() {
   return (
-    <StyledFooter>
-      <Progress />
-    </StyledFooter>
+    <StyledFooter />
   )
 }
 
