@@ -29,14 +29,16 @@ const Fieldset = styled.fieldset`
   padding: 0;
 `
 
-const Dropdown = styled.select`
-  height: 37px;
-  line-height: 37px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  margin: 0 5px;
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
+const Dropdown = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+`
+
+const Select = styled.select`
+  height: 35px;
+  line-height: 35px;
   flex: 1 1 auto;
   appearance: none;
   outline: 0;
@@ -51,11 +53,21 @@ const Dropdown = styled.select`
   background-size: 10px;
   background-repeat: no-repeat;
   cursor: pointer;
-  margin-left: 35%;
   background-color: transparent;
   width: 65%;
   border-radius: 0;
-  margin-bottom: 25px;
+`
+
+const Label = styled.label`
+  height: 35px;
+  line-height: 35px;
+  width: 35%;
+  color: #3d386a;
+  text-align: right;
+  margin-right: 15px;
+  font-size: 0.75em;
+  font-weight: bold;
+  text-transform: uppercase;
 `
 
 function Form() {
@@ -63,13 +75,16 @@ function Form() {
     <StyledForm>
       <Fieldset>
         <Dropdown>
-          <option>Templates</option>
-          <option>Profile</option>
-          <option>Education</option>
-          <option>Experience</option>
-          <option>Skills</option>
-          <option>Projects</option>
-          <option>Awards</option>
+          <Label>Current Section</Label>
+          <Select>
+            <option>Templates</option>
+            <option>Profile</option>
+            <option>Education</option>
+            <option>Experience</option>
+            <option>Skills</option>
+            <option>Projects</option>
+            <option>Awards</option>
+          </Select>
         </Dropdown>
         <Switch>
           <Route
